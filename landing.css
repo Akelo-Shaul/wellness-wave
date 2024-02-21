@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* the search bar that is hidden */
+/* .top-search{
+    padding:20px 60px;
+} */
+.form-inline{
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    /* font-size: 100%; */
+   
+}
+.form-inline >input,button{
+    font-size: 25px;
+    padding: 10px 0;
+}
+.form-inline >input{
+    cursor: text;
+}
+.form-inline >button{
+    border:none;
+    border-left: 1px solid gray;
+    background-color: white;
+    padding: 10px 20px;
+}
+/* end of the searchbar */
+
+/* the bar with the social icons */
+.topbar{
+    background-color: green;
+}
+.row{
+    padding: 20px 60px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.topsocials >a{
+    color: white;
+}
+.topsocials >a >i{
+    padding: 0 3px;
+}
+.topsearch >a{
+    color: white;
+    text-decoration: none;
+}
+.topsearch >a >i{
+    padding: 0 5px;
+}
+.header-section{
+    padding: 40px;
+    border: 1px solid green;
+}
+.logo{
+    text-align: center;
+    font-family: TiemposText,sans-serif;
+    /* font-size: 40px; */
+    font-size: 75px;
+}
+.sub-logo{
+    text-align: center;
+    font-size: 16px;
+}
+
+/* header with page links */
+.toggle-button{
+    padding: 0 12px;
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+}
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', serif;
+}
+.nav-links ul li{
+    padding: 0 15px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+.nav-links ul li a:hover{
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+}
+
+/* first section with three containers */
+.center-side,
+.left-side,
+.right-side {
+    float: left;
+    /* width: 30%; */
+}
+/* the image in the container in the first section */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-container{
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted gray;
+    /* flex-wrap: wrap; */
+}
+
+/* The image container */
+.section-container >div{
+    overflow: hidden;
+    margin: 5px;
+    position: relative;
+    max-height: 400px;
+}
+.image-container{
+    object-fit: cover;
+}
+.blog-meta{
+    position: absolute;
+    bottom: 5px;
+    padding: 10px;
+}
+.category-info{
+    font-size: 13px;
+    background-color: green;
+    border-radius: 3px;
+    padding: 2px 10px;
+}
+.category-info >a{
+    text-decoration: none;
+    color: #fff;
+}
+.blog-meta >h4 >a{
+    font-size: 22px;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+.blog-meta >h4 >a:hover{
+    text-decoration: underline;
+}
+.blog-meta small{
+    font-size: 11px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #111111;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    margin-top: 15px;
+}
+.blog-meta small a{
+    text-decoration: none;
+    color: #fff;
+}
+.blog-meta small:after {
+    content: "/";
+    color: #fff;
+    padding-left: 1rem;
+}
+.blog-meta small:last-child:after {
+    content: ""
+}
+
+/* second blog section  */
+.blogs-section{
+    padding: 50px 80px;
+}
+.section-row{
+    display: flex;
+}
+.blog-banner{
+    display: flex;
+    padding: 10px 0;
+}
+.banner-img img{
+    width: 200px;
+    height: 100%;
+}
+.banner-info{
+    padding: 0 20px;
+    max-width: 700px;
+}
+.banner-info h4{
+    margin: 15px 0;
+}
+.banner-info h4 a{
+    font-size: 28px;
+    color: #000;
+    font-weight: 800;
+    text-decoration: none;
+}
+.banner-info p{
+    font-size: 16px;
+    color: gray;
+}
+.banner-info small{
+    font-size: 11px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #111111;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    margin-top: 15px;
+}
+.banner-info small a{
+    text-decoration: none;
+    color: #000;
+}
+.banner-info small:after {
+    content: "/";
+    color: #000;
+    padding-left: 1rem;
+}
+.banner-info small:last-child:after {
+    content: ""
+}
+/* left side with recent images and searchbar */
+.left-search{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.search-container >h3{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.search-inner{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+}
+.search-inner >input{
+    min-width: 50%;
+    padding: 0 10px;
+    border: 1px solid gray;
+    border-radius: 0;
+}
+.side-search-btn{
+    background-color: green;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+.recent-post-container{
+    margin: 20px 0;
+}
+.recent-banner{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 3px;
+}
+.recent-img >img{
+    width: 50px;
+    height: 50px;
+}
+.recent-info{
+    padding: 3px 10px;
+}
+.recent-info >h6{
+    font-size: 16px;
+}
+.recent-info >h6 >a{
+    text-decoration: none;
+    color: #000;
+}
+.recent-info small{
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.recent-info >small >a{
+    text-decoration: none;
+    color: #000;
+}
+/* popular categories section */
+.popular-categories{
+    margin: 20px 0;
+}
+.popular-categories >p{
+    border-bottom: 1px dotted gray;
+    padding: 5px 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* hidden class for activating and deactivating elements */
+.hidden{
+    display: none;
+}
+
+/* media queries for large screen */
+@media (min-width: 750px) {
+    .top-search{
+        padding:20px 60px;
+    }
+}
+@media (min-width: 600px) {
+    .toggle-button{
+        display: none;
+    }
+    .nav-links{
+        padding: 30px;
+    }
+}
+
+
+/* media queries for small screen*/
+@media (max-width: 400px) {
+    .top-search-btn{
+        display: none;
+    }
+    .topsocials{
+        display: none;
+    }
+    .header-section{
+        padding: 0;
+    }
+    .form-inline{
+        padding: 20px;
+    }
+    .form-inline >input,button{
+        font-size: 16px;
+        padding: 0px 0;
+    }
+    .row{
+        padding: 20px auto;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header-section{
+        padding: 90px 0;
+        border: 1px solid green;
+    }
+    /* .topbar{
+        display: none;
+    } */
+}
+@media (max-width: 600px) {
+    .logo{
+        text-align: center;
+        font-size: 37px;
+        font-weight: 900;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', serif;
+        width: 100%;
+    }
+    .nav-links ul li{
+        padding: 15px;
+        margin: 2px 5px;
+        border: 1px solid green;
+        /* width: 100%; */
+        text-align: center;
+        border-radius: 3px;
+    }
+}
+@media (max-width: 800px) {
+    .section-container{
+        overflow: hidden;
+        /* display: flex;
+        flex-wrap: wrap; */
+        /* flex-direction: row; */
+    }
+    
+    .section-container{
+        flex-wrap: wrap;
+    }
+    .center-side,
+    .left-side,
+    .right-side {
+        float: left;
+        width: 48%;
+    }
+    .right-side{
+        display: none;
+    }
+}
+@media (max-width: 720px) {
+    .center-side,
+    .left-side,
+    .right-side {
+        float: left;
+        width: 100%;
+    }
+    .right-side{
+        display: block;
+    }
+}
+@media (max-width: 980px) {
+    .section-row{
+        flex-direction: column;
+    }
+}
