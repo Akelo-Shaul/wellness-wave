@@ -1,25 +1,17 @@
-const fs = require("fs");
-// const filePath = "comments.json";
-
-// read from json
-// const comments = JSON.parse(fs.readFileSync(filePath).toString());
-// console.log(comments[0].name);
-
-function loadJSON(filename = "") {
-  return JSON.parse(
-    fs.existsSync(filename) ? fs.readFileSync(filename).toString() : "null"
-  );
+export function loadJSON(fileName) {
+  let comments = [];
+  try {
+    comments = JSON.parse(localStorage.getItem(fileName)) || [];
+  } catch (error) {
+    console.error('Error loading JSON:', error);
+  }
+  return comments;
 }
 
-function saveJSON(filename = "", json = '""') {
-  return fs.writeFileSync(filename, JSON.stringify(json, null, 2));
+export function saveJSON(fileName, data) {
+  try {
+    localStorage.setItem(fileName, JSON.stringify(data));
+  } catch (error) {
+    console.error('Error saving JSON:', error);
+  }
 }
-
-// const comments = loadJSON("comments.json");
-
-// if (typeof theComment !== "undefined") {
-//   comments.push(theComment);
-//   saveJSON("comments.json", comments);
-// }
-
-export { loadJSON, saveJSON };
